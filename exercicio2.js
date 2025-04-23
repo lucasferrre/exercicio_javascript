@@ -2,7 +2,7 @@
 
 let numeroSorteado = Math.floor(Math.random() * 10) + 1;
 let tentativas = 3;
-let acertou = false;
+let acertou = false;//Se o jogador acertar, ela vira true. Se no final ainda for false, ele perdeu.
 
 alert("Tente adivinhar o número que estou pensando! É entre 1 e 10. Você tem 3 tentativas.");
 
@@ -16,7 +16,7 @@ for (let contador = 1; contador <= tentativas; contador++) {
     }
 
     if (palpite === numeroSorteado) {
-        alert(`🎉 Parabéns! Você acertou o número ${numeroSorteado} na tentativa ${i}!`);
+        alert(`🎉 Parabéns! Você acertou o número ${numeroSorteado} na tentativa ${contador}!`);
         acertou = true;
         break;
     } else if (palpite < numeroSorteado) {
